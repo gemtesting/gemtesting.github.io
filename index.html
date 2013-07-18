@@ -1,67 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <meta charset="utf-8">
+    <title>GEM Testing & Evaluation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+    <!-- Le styles -->
+    <link href="cssGEM/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .hero-unit {
+            overflow: hidden;
+            padding: 0;
+            clear: both;
+            background: transparent;
+        } 
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Gemtesting.github.io by gemtesting</title>
+
+    </style>
+    <link href="cssGEM/bootstrap-responsive.css" rel="stylesheet">
   </head>
-
+  
   <body>
-    <a id="forkme_banner" href="https://github.com/gemtesting">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Gemtesting.github.io</h1>
-            <h2>GEM Testing and Evaluation group</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
+     <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+	  <a class="brand" href="#">GEM Testing & Evaluation</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Projects & Presentations</a></li>
+	      <!--<li><a href="presentations.html">Presentations</a></li>-->
+	      <li><a href="meetTeamserver.html">Meet the Team</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <p>Test</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/gemtesting">gemtesting</a> can be found on <a href="https://github.com/gemtesting">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
     </div>
 
-    
+
+   <!-- <div class="container">
+
+      <div class="hero-unit">
+	<h2>Robert's Project Page</h2>
+      </div>
+    </div> -->
+
+<!-- Carousel
+    ================================================== -->
+	<div class="container">
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+	<div class="active item">
+         <a href="http://eval.gem.gfz-potsdam.de/rclements/gmpeApp/" target="_blank"><img src="imgGEM/gmpe_app2.png" alt=""></a>
+            <div class="carousel-caption">
+              <h3><a href="http://eval.gem.gfz-potsdam.de/rclements/gmpeApp/" target="_blank">Ground motion model evaluation</a></h3>
+              <p>We are doing some exciting things with visualizing and evaluating the performance of ground motion prediction equations (GMPEs), including tracking model performance over time and visualizing model errors spatially. Click above to test out our application of interactive visualizations of GMPE residuals and scores, for 14 GMPEs for Japan. Some preliminary results for this evaluation experiment are presented <a href="presentations/GMPE_slides.pdf" target="_blank">here</a>.</p>
+            </div>
+          </div>
+        <div class="item">
+          <a href="http://eval.gem.gfz-potsdam.de/rclements/ipeApp/" target="_blank"><img src="imgGEM/ipe_app.png" alt=""></a>
+            <div class="carousel-caption">
+              <h3><a href="http://eval.gem.gfz-potsdam.de/rclements/ipeApp/" target="_blank">Intensity prediction equation evaluation</a></h3>
+              <p>Macroseismic intensity is a measure often used to quantify site-specific damage of earthquakes. Click above for an interactive application that visualizes residuals and other evaluation scores for ten intensity prediction equations (IPEs) for Italy. The IPEs are tested against several observation databases, including USGS Did You Feel It (DYFI) questionnaires from the Italian region. We are also evaluating a <a href="http://eval.gem.gfz-potsdam.de/rclements/ipeGlobalApp/" target="_blank">global IPE</a> using global DYFI data.</p>
+            </div>
+        </div>
+        <div class="item">
+          <a href="http://www.completenessweb.gfz-potsdam.de/" target="_blank"><img src="imgGEM/mp.italy.png" alt=""></a>
+            <div class="carousel-caption">
+              <h3><a href="http://www.completenessweb.gfz-potsdam.de/" target="_blank">Completeness</a></h3>
+             <p>Catalog completeness is an important component of estimating parameters of earthquake and ground motion models. However, most estimation methods rely on the Gutenberg-Richter distribution. Click above to learn about our Probabilistic Magnitude of Completeness method - a distribution-free estimation method - and construct completeness maps. More details and results can be found <a href="presentations/schorlemmer.completeness.pdf" target="_blank">here</a>.</p>
+            </div>
+        </div>
+        <div class="item">
+          <a href="http://eval.gem.gfz-potsdam.de/rclements/MmaxApp/" target="_blank"><img src="imgGEM/mmax.png" alt=""></a>
+            <div class="carousel-caption">
+              <h3><a href="http://eval.gem.gfz-potsdam.de/rclements/MmaxApp/" target="_blank">Maximum magnitude testing</a></h3>
+              <p>The maximum magnitude (Mmax) is a crucial parameter for seismic hazard assessment, but its accuracy remains untestable. Click above to try out our application for estimating the number of earthquakes and number of years required in order to test with high power a hypothesized value of Mmax. Details and results are presented <a href="presentations/Mmax_Japan_v2.pdf" target="_blank">here</a>.</p>
+            </div>
+          </div>
+	<div class="item">
+          <img src="imgGEM/eqratetest.png" alt="">
+            <div class="carousel-caption">
+              <h3><a href="presentations/CSEP-methods-presentation.pdf" target="_blank">Earthquake rate forecast evaluation</a></h3>
+              <p>Before we can calculate seismic hazard, a well-tested forecast for earthquake rates is necessary. We use a variety of statistical methods, broadly grouped into 2 types, to find the best forecast in evaluation experiments around the globe. Click <a href="presentations/CSEP-methods-presentation.pdf" target="_blank">here</a> for a slideshow that shows our techniques in action.</p>
+            </div>
+          </div>
+	<div class="item">
+          <img src="imgGEM/testcenter.png" alt="">
+            <div class="carousel-caption">
+              <h3><a href="presentations/TestingAndEvaluation-11.pdf" target="_blank">An operational testing center</a></h3>
+              <p>The testing center is designed for open, reproducible and prospective testing and evaluation of intensity and ground motion models. Ground motion models and data are collected and stored, a suite of scores and evaluations are run on ground motion models, and all results are saved - all without human interference. For more details, see <a href="presentations/TestingAndEvaluation-11.pdf" target="_blank">here</a> and <a href="presentations/TestingHazard-26.pdf" target="_blank">here</a>.</p>
+            </div>
+          </div>
+
+        </div> <!--carousel inner -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+<br>
+<br>
+<br>
+
+<!--
+<div class="container">
+
+      <div class="hero-unit">
+	<h2>Testing & Evaluation Team</h2>
+        <p>We are an interdisciplinary group of geophysicists, software developers and statistcians at the German Research Centre for Geosciences.</p>
+      </div>
+    </div> 
+
+    <div class="container">
+	<div class="row">
+	<div class="span4">
+	<img src="imgGEM/ds.jpeg" height="423">
+	<h1>Danijel Schorlemmer</h1>
+	<h3>Lead scientist </h3>
+   	</div>
+
+    	<div class="span4">
+	<img src="imgGEM/beutin.jpeg" height="423">
+	<h1>Thomas Beutin</h1>
+	<h3>Software developer </h3>
+ 	</div>
+
+    	<div class="span4">
+	<img src="imgGEM/smak.jpeg" height="423">
+	<h1>Sum Mak</h1>
+	<h3>Postdoctoral researcher </h3>
+	</div>
+   </div>
+
+    <div class="row">
+	<div class="span4">
+	<img src="imgGEM/alvaro.jpeg" height="423">
+	<h1>Alvaro Gonzalez</h1>
+	<h3>Visiting scientist </h3>
+	</div>
+
+	<div class="span4">
+	<img src="imgGEM/clements.jpeg" height="423">
+	<h1>Robert Clements</h1>
+	<h3>Postdoctoral researcher </h3>
+	</div>    
+
+	<div class="span4">
+	<img src="imgGEM/mds2.jpg" height="423">
+	<h1>Max Schneider</h1>
+	<h3>Research assistant </h3>
+	</div>
+    </div>
+</div>  -->
+
+
+
+
+  <hr>
+
+  <footer>
+        <p>Built by <a href="http://github.com/r-clements">r-clements</a>. Styled with <a href="http://twitter.github.com/bootstrap">Bootstrap</a>.</p>
+      </footer>
+
+    </div><!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jsGEM/jquery.js"></script>
+    <script src="jsGEM/bootstrap-transition.js"></script>
+    <script src="jsGEM/bootstrap-alert.js"></script>
+    <script src="jsGEM/bootstrap-modal.js"></script>
+    <script src="jsGEM/bootstrap-dropdown.js"></script>
+    <script src="jsGEM/bootstrap-scrollspy.js"></script>
+    <script src="jsGEM/bootstrap-tab.js"></script>
+    <script src="jsGEM/bootstrap-tooltip.js"></script>
+    <script src="jsGEM/bootstrap-popover.js"></script>
+    <script src="jsGEM/bootstrap-button.js"></script>
+    <script src="jsGEM/bootstrap-collapse.js"></script>
+    <script src="jsGEM/bootstrap-carousel.js"></script>
+    <script src="jsGEM/bootstrap-typeahead.js"></script>
+
   </body>
 </html>
